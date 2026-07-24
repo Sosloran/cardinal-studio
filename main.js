@@ -25,10 +25,10 @@
 
   // Portafolio dinámico — cada nueva web se agrega aquí (más reciente arriba)
   var projects = [
-    { name: 'Cardinal Studio', tag: 'Web · Agencia IA', grad: 1, url: 'https://cardinal-studio.onrender.com' },
-    { name: 'GYMQUEST', tag: 'App · Gimnasio', grad: 3, url: 'https://gymquest-fosl.onrender.com' },
-    { name: 'Gastos Cardinal', tag: 'Web · Finanzas', grad: 2, url: 'https://gastos-cardinal.onrender.com' },
-    { name: 'Catalonia Bayahibe', tag: 'Web · Hotel', grad: 4, url: 'https://sosloran.github.io/Catalonia-Bayahibe' }
+    { name: 'Cardinal Studio', tag: 'Web · Agencia IA', grad: 1, url: 'https://cardinal-studio.onrender.com', img: 'shots/cardinal.png' },
+    { name: 'GYMQUEST', tag: 'App · Gimnasio', grad: 3, url: 'https://gymquest-fosl.onrender.com', img: 'shots/gymquest.png' },
+    { name: 'Gastos Cardinal', tag: 'Web · Finanzas', grad: 2, url: 'https://gastos-cardinal.onrender.com', img: 'shots/gastos.png' },
+    { name: 'Catalonia Bayahibe', tag: 'Web · Hotel', grad: 4, url: 'https://sosloran.github.io/Catalonia-Bayahibe', img: 'shots/catalonia.png' }
   ];
   var gallery = document.getElementById('gallery');
   if (gallery) {
@@ -39,7 +39,7 @@
       a.target = '_blank';
       a.rel = 'noopener';
       a.innerHTML = '<span class="shot__tag">' + p.tag + '</span>' +
-                    '<div class="shot__img shot__img--' + p.grad + '"></div>' +
+                    '<img class="shot__img" src="' + p.img + '" alt="' + p.name + '" loading="lazy" />' +
                     '<span class="shot__title">' + p.name + '</span>';
       gallery.appendChild(a);
     });
