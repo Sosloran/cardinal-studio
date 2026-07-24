@@ -29,19 +29,19 @@
     if (nav) nav.style.boxShadow = window.scrollY > 10 ? '0 8px 30px rgba(0,0,0,.25)' : 'none';
   });
 
-  // Formulario: demo local (no envía a ningún lado)
+  // Formulario: envía a tigsociety1816@gmail.com vía Formsubmit.co (acción en el HTML)
   var form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    form.addEventListener('submit', function () {
       var note = document.getElementById('formNote');
       var nombre = form.nombre.value.trim();
       if (!nombre || !form.email.value || !form.mensaje.value) {
         if (note) { note.textContent = 'Completa nombre, email y mensaje.'; note.style.color = '#ff7a18'; }
-        return;
+        return false;
       }
-      if (note) { note.textContent = 'Gracias ' + nombre + ', mensaje listo (demo local).'; note.style.color = '#ff3b3b'; }
-      form.reset();
+      // Dejar que el navegador envíe el formulario (Formsubmit entrega el correo)
+      if (note) { note.textContent = 'Enviando tu idea a Cardinal Studio...'; note.style.color = '#ff3b3b'; }
+      return true;
     });
   }
 })();
