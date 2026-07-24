@@ -144,6 +144,11 @@ a { color: inherit; text-decoration: none; }
 .shot__img--2 { background: linear-gradient(135deg,#ff7a18,#5a2c00); }
 .shot__img--3 { background: linear-gradient(135deg,#6c5ce7,#241a5a); }
 .shot__img--4 { background: linear-gradient(135deg,#00b4d8,#013a4a); }
+.shot__img--5 { background: linear-gradient(135deg,#10b981,#053b2c); }
+.shot__img--6 { background: linear-gradient(135deg,#e84393,#4a1030); }
+.shot__title { position: absolute; left: 12px; bottom: 12px; right: 12px; font-weight: 600; font-size: .92rem; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.6); }
+.shot { cursor: pointer; transition: transform .25s, border-color .25s; }
+.shot:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
 .shot__tag { position: absolute; top: 10px; left: 10px; font-size: .72rem; font-weight: 600; background: rgba(0,0,0,.5); color: #fff; padding: 4px 10px; border-radius: 999px; backdrop-filter: blur(4px); }
 
 /* CTA */
