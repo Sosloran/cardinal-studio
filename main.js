@@ -39,7 +39,7 @@
       a.target = '_blank';
       a.rel = 'noopener';
       a.innerHTML = '<span class="shot__tag">' + p.tag + '</span>' +
-                    '<img class="shot__img" src="' + p.img + '" alt="' + p.name + '" loading="lazy" />' +
+                    '<img class="shot__img" src="' + p.img + '" alt="' + p.name + '" />' +
                     '<span class="shot__title">' + p.name + '</span>';
       gallery.appendChild(a);
     });
