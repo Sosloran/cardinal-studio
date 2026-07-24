@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cardinal-studio
+    runtime: static
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
