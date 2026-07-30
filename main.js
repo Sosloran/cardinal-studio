@@ -25,7 +25,7 @@
 
   // Portafolio dinámico — cada nueva web se agrega aquí (más reciente arriba)
   var projects = [
-    { name: 'Cardinal Studio', tag: 'Web · Agencia IA', grad: 1, url: 'https://cardinal-studio.onrender.com', img: 'shots/cardinal.png' },
+    { name: 'Cardinal Studio', tag: 'Web · Agencia digital', grad: 1, url: 'https://cardinal-studio.onrender.com', img: 'shots/cardinal.png' },
     { name: 'GYMQUEST', tag: 'App · Gimnasio', grad: 3, url: 'https://gymquest-fosl.onrender.com', img: 'shots/gymquest.png' },
     { name: 'Gastos Cardinal', tag: 'Web · Finanzas', grad: 2, url: 'https://gastos-cardinal.onrender.com', img: 'shots/gastos.png' },
     { name: 'Catalonia Bayahibe', tag: 'Web · Hotel', grad: 4, url: 'https://sosloran.github.io/Catalonia-Bayahibe', img: 'shots/catalonia.png' }
